@@ -12,8 +12,8 @@ from keras.models import load_model
 # loads intents dictionary
 # loads pickle files of words and classes in reading binary mode (rb)
 # loads trained model
-dictionary = open('intents/intents.json').read()
-intents = json.loads(dictionary)
+# dictionary = open('intents/intents.json').read()
+# intents = json.loads(dictionary)
 words = pickle.load(open('pkl/words.pkl', 'rb'))
 classes = pickle.load(open('pkl/classes.pkl', 'rb'))
 model = load_model('model/chatbotModel.h5')
@@ -59,10 +59,8 @@ def getResponse(intentsList, intents_json):
     for i in listOfIntents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
-            break
-    return result
-
-    # return "Sorry, I don't understand."
+            return result
+        return "Sorry, I don't understand."  # returns string if probability/confidence level is low
 
 # chatbot loop
 # print("Test running...")
