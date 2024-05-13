@@ -43,6 +43,7 @@ def bagOfWords(sentence):
 # predicts the class (tag) where a sentence falls under
 def predictClass(sentence):
     bow = bagOfWords(sentence)
+    print(sentence)
     res = model.predict(np.array([bow]))[0]  # passes the numpy array of the bag of words
     ERRORTHRESHOLD = 0.25
     results = [[i, r] for i, r in enumerate(res) if r > ERRORTHRESHOLD]  # uses the softmax activation function which returns the probability that a certain input belongs to a specific class | if the probability is 25% or lower then disregard
@@ -59,8 +60,9 @@ def getResponse(intentsList, intents_json):
     for i in listOfIntents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
-            return result
-        return "Sorry, I don't understand."  # returns string if probability/confidence level is low
+    return result
+
+
 
 # chatbot loop
 # print("Test running...")

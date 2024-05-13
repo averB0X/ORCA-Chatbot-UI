@@ -32,7 +32,7 @@ const createChatElement = (content, className) => {
 }
 
 const getChatResponse = async (incomingChatDiv) => {
-    const API_URL = "127.0.0.1:8080/predict";
+    const API_URL = $SCRIPT_ROOT + "/predict";
     const pElement = document.createElement("p");
 
     // Define the properties and data for the API request
