@@ -1,0 +1,7 @@
+{"intents": [
+    {
+        "tag": "programs",
+        "patterns": ["program", "what programs do you offer?", "courses", "what courses do you offer?", "what programs does STI have?", "do you have BSIT?", "do you offer information technology?","do you have BSCS?", "do you offer computer science?", "do you have a program for hospitality and management?"],
+        "responses": ["Thank you for your interest in our school. We are offering the following programs:"]
+    }
+]}

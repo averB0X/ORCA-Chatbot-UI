@@ -1,0 +1,38 @@
+{"intents": [
+    {
+    "tag": "greetings",
+    "patterns": ["hi", "hello", "hey", "good morning", "good evening",
+    "greetings", "what's up?", "how are you doing?", "good day"],
+    "responses": ["Hello!", "Hi!", "How can I help you?", "How can I help you today?", "What can I help you with?", "Good day to you!", "What can I do for you?", "What can I do for you right now?"]
+    },
+
+    {
+    "tag": "name",
+    "patterns": ["what are you called?", "who are you?", "what is your name?"],
+    "responses": ["My creators named me ORCA.", "My name is ORCA!", "I am called ORCA!", "I was named ORCA!", "I am ORCA! Pleased to meet you!", "My name is ORCA, what do you want me to call you?"]
+    },
+
+    {
+    "tag": "context: registrar",
+    "patterns": ["requirements", "form 138", "form 137", "report card", "grades", "marks", "subjects", "courses", "documents", "remaining requirements", "course schedule", "subject schedule", "course schedule", "what is my schedule for this subject?", "what is my schedule for this course?", "what time does my class start?", "how can I change my schedule?", "i need to change my schedule", "how can I enroll on a subject?", "how can I drop a subject?", "i need to pass requirements", "where do I pass requirements?", "what are my missing documents?"],
+    "responses": ["placeholder registrar"]
+    },
+
+    {
+    "tag": "context: cashier",
+    "patterns": ["payment", "pay", "bill", "alternative payment", "gcash", "cash", "bank", "online payment", "balance", "installment", "how much is my remaining balance?", "how do I pay?", "how can I pay?", "where can I pay?", "what are the ways I can pay?", "can I pay online?", "can I pay onsite?", "where is the cashier?", "what are the office hours of cashier?", "can I pay another way?", "how much do I need to pay?", "do I need to pay anything this month?", "do I have remaining balance?", "my payment didn't reflect", "my payment did not go through"],
+    "responses": ["placeholder cashier"]
+    },
+
+    {
+    "tag": "context: technical",
+    "patterns": ["account", "ID", "RFID", "microsoft account", "elms account", "one sti account", "one sti", "portal", "i cant tap my ID", "my ID doesn't work", "my ID doens't work in the gate", "my ID is broken", "my RFID doesn't work", "i need an ID replacement", "i'm having problems with my ID", "i can't access my account", "i can't open my account", "i can't open my microsoft account", "i can't login", "i cant log my account in", "my account doesn't work", "i cant open my eLMS", "i cant open my portal", "how do i access my account?", "how can i reset my password?", "i need help with my account", "how do i open my portal?", "can you help me reset my password?", "can you help me access my account?", "im getting an error", "website is displaying an error", "portal has server error", "what is the status of the portal?", "i can't access my portal"],
+    "responses": ["placeholder technical"]
+    },
+
+    {
+    "tag": "programs",
+    "patterns": ["programs", "what programs do you offer?", "courses", "what courses do you offer?", "what programs does STI have?", "do you have BSIT", "do you have BSCS?", "do you offer computer science", "information technology", "BSTM", "hospitality and management"],
+    "responses": ["Thank you for your interest in our school. We are offering the following programs:  - BS in Information Technology (BSIT), - BS in Computer Science (BSCS), - BS in Computer Engineering (BSCPE)"]
+    }
+]}

@@ -1,0 +1,125 @@
+{"intents": [
+    {
+        "tag": "greetings",
+        "patterns": ["hi", "hello", "hey", "good morning", "good evening",
+        "greetings", "what's up?", "how are you doing?", "good day"],
+        "responses": ["Hello!", "Hi!", "How can I help you?", "How can I help you today?", "What can I help you with?", "Good day to you!", "What can I do for you?", "What can I do for you right now?"]
+    },
+
+    {
+        "tag": "name",
+        "patterns": ["what are you called?", "who are you?", "what is your name?"],
+        "responses": ["My creators named me ORCA.", "My name is ORCA!", "I am called ORCA!", "I was named ORCA!", "I am ORCA! Pleased to meet you!", "My name is ORCA, what do you want me to call you?"]
+    },
+
+    {
+        "tag":"programs",
+        "patterns":["program", "what programs do you offer?", "courses", "what courses do you offer?", "what programs does STI have?", "do you have BSIT?", "do you offer information technology?","do you have BSCS?", "do you offer computer science?", "do you have a program for hospitality and management?"],
+        "responses":[" Thank you for your interest in our school. We are offering the following programs: - BS in Information Technology (BSIT); BS in Computer Science (BSCS); BS in Computer Engineering (BSCPE); BS in Hospitality Management (BSHM); BS in Tourism Management (BSTM); Bachelor of Multimedia Arts (BMMA); Bachelor of Arts in Communication (BACOMM); BS in Accountancy (BSA); BS in Criminology (BSCrim); and BA Psychology (BA Psych)."
+        ]
+    },
+
+    {
+        "tag":"tertiary freshmen requirements",
+        "patterns":["what are the requirements for oncoming college freshmen students?", "what are the requirements for first year college students?", "freshmen requirements", "first year college requirements", "new college student requirements", "oncoming college student requirements", "what do I need to enroll for freshmen?", "what do I need to enroll for first year college?", "tertiary freshmen requirements", "what are the requirements for tertiary freshmen application?", "may i know the requirements for college?"],
+        "responses":["Requirements: FOR FIRST-YEAR COLLEGE STUDENTS: Original Form 138 Original; Form 137-SHS; and PSA-issued Birth Certificate"]
+    },
+
+    {
+        "tag":"tertiary transferee requirements",
+        "patterns":["what are the requirements for college  transferee students?", "im a transferee from another school, what are the requirements for college enrollment?", "college transferee requirements", "how to transfer school to STI?", "what are the requirements for transferring as a college student?", "what do I need to transfer?", "what do I need as a transferee to apply?"],
+        "responses":["Requirements: FOR TRANSFEREES: Certificate of Transfer (Honorable Dismissal); Official Transcript of Record; and PSA-issued Birth Certificate (COLORED PHOTOCOPY)"]
+    },
+
+    {
+        "tag":"tertiary ALS passers requirements",
+        "patterns":["what are the requirements for Alternative Learning System or ALS passers?", "requirements for Alternative Learning System passers", "requirements for ALS passers", "ALS passers requirements", "alternative learning system passers requirements", "what do I need to apply for college as an alternative learning system or ALS passer?"],
+        "responses":["FOR ALS PASSERS: Certificate of Rating (COR)indicating College eligibility; PSA Issued Birth Certificate; and any of the following clearances: Barangay, Police, NBI"]
+    },
+      
+    {
+        "tag":"tertiary fee",
+        "patterns":["college tuition fee", "college tuition", "tertairy fee", "tertiary tuition", "how much is the tuition for college freshmen?", "how much is the fee for tertiary enrollment?", "can you give me the list of tuition fees for college freshmen?", "how much do I need to pay for freshmen enrollment?"],
+        "responses":["As of the moment, we do not have the exact school fees matrix but this is the estimated fees for incoming freshman S.Y 2024-2025. All modes of payment already include tuition fees, other school fees, and miscellaneous fees. Plus the students’ Office 365 account, 1TB cloud storage on OneDrive, and E-Learning Management System or ELMS access, among many except school uniform: A. Cash: Php 22,000.00 to 30,000.00; B. Installment Plans: Low Down Payment: Php 8,000.00 to Php 10,000.00 Low-Monthly Payment: Php 10,000.00 to Php 12,000.00 *The remaining balance for installment plans will be divided into 4 months."]
+    },
+
+    {
+        "tag":"SHS strands",
+        "patterns":["strand", "what senior high school strands do you offer?", "what are your SHS strands?", "what strands can I enroll for in your senior high school program?", "what strands for SHS do you offer?", "what strands for SHS do you have?", "do you offer academic tracks for senior high school?", "do you offer technical vocational livelihood tracks for senior high school?", "do you offer ABM in SHS?", "do you offer STEM in SHS?", "do you offer HUMSS in senior high school?", "do you offer accounting, business, and management in SHS?", "do you offer science, technology, engineering, and mathematics in SHS?", "do you offer Humanities and Social Sciences in senior high school?"],
+        "responses":["Thank you for your interest in our school. We are offering the following SHS strands. #ACADEMIC TRACK: Accounting, Business, and Management (ABM), Science, Technology, Engineering and Mathematics (STEM), and Humanities and Social Sciences (HUMSS)#TECHNICAL-VOCATIONAL-LIVELIHOOD TRACK: IT in Mobile App & Web Development (MAWD); Tourism Operations (TOPERS); Digital Arts (DA); and Culinary Arts (CUARTS)."]
+    },
+    
+    {
+        "tag":"SHS requirements",
+        "patterns":[
+                    "what documents do I need for Senior High School admission?", 
+                    "could you please list the requirements for enrolling in Senior High School?", 
+                    "admission criteria for senior high school",
+                    "can you tell me what I need to prepare for senior high school enrollment",
+                    "what are the documents required for senior high school enrollment",
+                    "requirements for Senior High School"
+                ],
+        "responses":["Admission Requirements are as follows: Original Form 138, Original Form 137 (letter request to be issued once officially enrolled), and PSA-issued Birth Certificate."]
+    },
+    
+    {
+        "tag":"SHS fee",
+        "patterns":[
+            "what are the estimated fees for senior high school",
+            "provide information about fees for senior high school",
+            "how much does it cost to enroll in senior high school",
+            "cost to enroll in shs",
+            "fees for shs"
+        ],
+        "responses":["As of the moment, we do not have the exact school fees matrix but this is the estimated fees for incoming grade 11 S.Y 2024-2025. It is good for the whole year including the miscellaneous fees, other school fees, ELMS account, 0365 account, and uniforms. For DepEd voucher holders, total fees for the whole year range from: Cash: Php 13,000 to Php 15,000.00. For ESC/QVR voucher holders, total fees for the whole year range from: Cash: Php 18,000.00 to Php 20,000.00. For NON-VOUCHER students, total fees for the whole year range from: Cash: Php 30,000.00 to Php Php 32,000.00. We are also offering bi-annual and monthly payment plans. :) **Tuition fee may still be subject to change.**"]
+    },
+    
+    {
+        "tag":"online payment",
+        "patterns":[
+            "how can I pay my fees online",
+            "do you accept  online payment",
+            "online payment methods",
+            "guide me through the process of paying online"
+        ],
+        "responses":["You may pay online through our Alternative Payment Service or GCash. For our Alternative Payment Service, please click this link: https://www.sti.edu/payments/. It will also guide you through the process of paying reservation and tuition fees through the service. Should you choose to pay through GCash, open your GCash app and select the 'Pay Bills' option. STI can be found on the Schools category. Don’t forget to send us a screenshot of your payment after so we can validate it and send you an Official Receipt. Thank you!"]
+    },
+    
+    {
+        "tag":"slot reservation",
+        "patterns":[
+            "how can I reserve for slot enrollment",
+            "reseving a slot for new students",
+            "secure slot for admission"
+        ],
+        "responses":["Below is the procedure for slot reservation for new students: <b>ONLINE<b>: Step 1: Visit apply.sti.edu and fill out the application form completely. Step 2: Confirm your application by clicking the verification link sent to your registered email address.Step 3: Pay the P1,000.00 reservation fee. You may pay via online or over the counter thru our Alternative Payment Partners at payments.sti.eduStep 4: Send here a screenshot of your proof of payment and we will send back to you a copy of your Official Receipt (OR) in your registered e-mail. ON-SITE: Step 1: Visit our campus during office hours. We are open from 8 am to 4 pm daily except Sunday. Step 2: Fill-out the application form provided at the Admissions Office. Step 3: Pay the required amount indicated on the assessment form or the P1,000.00 reservation fee at the Cashier's Office. The reservation fee is non-refundable but it will be automatically deducted from the school fees as we process your enrollment with us."]
+    },
+ 
+    {
+        "tag":"online payment processed",
+        "patterns":[
+            "how long does it take for online payments to be processed?",
+            "what happens after I make an online payment",
+            "when will my online payment be reflected in my account"
+        ],
+        "responses":["Thank you for processing online payment. Allow us to receive your online payment in 3-5 working days. The amount that you have settled will be automatically reflected on your account once we have received it. You may visit the admissions office for the validation of your Exam Attendance Form (EAF) and show the screenshot of your payment transaction. You may also visit the cashier's office for the original copy of your receipt. If you have inquiries with regards to your online payment, kindly reach our school cashier at 8812-1784 local 860. Thank you. :) #MadeToBeMore"]
+    },
+ 
+    {
+        "tag":"scholarship",
+        "patterns":["how can I apply for scholarship", "what are the requirements for president's honor list scholarship", "provide information about the scholarship", "gpa need to qualify for president's honor list scholarship"],
+        "responses":["To process your application for the President's Honor List Scholarship, you need to submit the following: 1. Duly Accomplished Application Form 2. Letter of Intent addressed to Ms. Maricel Delera - Deputy School Administrator. 3. Submit to the Discipline Office.  Please note that the required GWA for the President's List is 1.50 and above (with no grades lower than 2.0, and NSTP and PE subjects must be at least 1.75). Additionally, you must be a regular student. Thank you! 🙂"]
+    },
+ 
+    {
+        "tag":"enrollment date",
+        "patterns":[ "when is the enrollmentnt for the upcoming school year","dates for enrollment for the next academic year","can you tell me when can I enroll for the upcoming school term","when will enrollment start"],
+        "responses":["As of now, we do not have the exact dates of enrollment for S.Y. 2024-2025. However, we will announce it here on our Facebook page once the enrollment is ongoing. The tentative month for enrollment is April or May. Kindly follow our page for future updates. Thank you!"]
+    },
+ 
+    {
+        "tag":"job application",
+        "patterns":["job openings at school", "do you have any job openings at your institution", "are currently hiring staff or faculty"],
+        "responses":["You have reached the Admissions Office of STI College Ortigas-Cainta. We are continuously looking for qualified applicants to join the STI Community. You may visit the school and submit your Curriculum Vitae (CV), or email us directly at recruitment@ortigas-cainta.sti.edu. We hope to hear from you again soon. Thank you!"]
+    }
+]}
