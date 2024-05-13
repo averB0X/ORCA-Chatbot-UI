@@ -15,10 +15,11 @@ def index_get():
 
 @app.post("/predict")
 def predict():
-    msg = request.get_json().get("msg")
+    msg = request.get_json().get("message")
     ints = predictClass(msg)
     res = getResponse(ints, intents)
-    return jsonify(res)
+    message = {"answer": res}
+    return jsonify(message)
         
         
 if __name__ == "__main__":
