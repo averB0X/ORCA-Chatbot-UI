@@ -1,6 +1,6 @@
 {"intents": [
     {
-    "tag": "(tech)cant access eLMS account",
+    "tag": "cant access eLMS account",
     "patterns": [
         "I can't access my eLMS account.",
         "I can't login to my eLMS account.",
@@ -20,7 +20,7 @@
     },
 
     {
-    "tag": "(tech)cant tap ID card",
+    "tag": "cant tap ID card",
     "patterns": [
         "My ID won't work at the gate.",
         "My RFID is broken.",
@@ -36,7 +36,7 @@
     },
 
     {
-    "tag": "(tech)lost ID card",
+    "tag": "lost ID card",
     "patterns": [
         "I lost my ID.",
         "My ID card is lost.",
@@ -51,7 +51,7 @@
     },
 
     {
-    "tag": "(tech)cant access MS Teams account",
+    "tag": "cant access MS Teams account",
     "patterns": [            
         "I can't access my Microsoft Teams account.",
         "I can't login to my Microsoft Teams account.",

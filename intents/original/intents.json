@@ -1,6 +1,6 @@
 {"intents": [
     {
-    "tag": "(admission)greetings",
+    "tag": "greetings",
     "patterns": [
         "hi",
         "hello",
@@ -25,7 +25,7 @@
     },
 
     {
-    "tag": "(admission)name",
+    "tag": "name",
     "patterns": [
         "what are you called?", 
         "who are you?", 
@@ -41,7 +41,7 @@
     },
 
     {
-    "tag":"(admission)programs",
+    "tag":"programs",
     "patterns":[
         "program",
         "what programs do you offer?",
@@ -63,7 +63,7 @@
     },
 
     {
-    "tag":"(admission)tertiary freshmen requirements",
+    "tag":"tertiary freshmen requirements",
     "patterns":["what are the requirements for oncoming college freshmen students?",
         "what are the requirements for first year college students?",
         "freshmen requirements",
@@ -82,7 +82,7 @@
     },
 
     {
-    "tag":"(admission)tertiary transferee requirements",
+    "tag":"tertiary transferee requirements",
     "patterns":[
         "what are the requirements for college  transferee students?",
         "im a transferee from another school, what are the requirements for college enrollment?",
@@ -97,7 +97,7 @@
     },
 
     {
-    "tag":"(admission)tertiary ALS passers requirements",
+    "tag":"tertiary ALS passers requirements",
     "patterns":[
         "what are the requirements for Alternative Learning System or ALS passers?",
         "requirements for Alternative Learning System passers",
@@ -112,7 +112,7 @@
     },
 
     {
-    "tag":"(admission)tertiary fee",
+    "tag":"tertiary fee",
     "patterns":["college tuition fee",
         "college tuition",
         "tertairy fee",
@@ -128,7 +128,7 @@
     },
 
     {
-    "tag":"(admission)SHS strands",
+    "tag":"SHS strands",
     "patterns":[
         "strand",
         "what senior high school strands do you offer?",
@@ -149,7 +149,7 @@
     },
     
     {
-    "tag":"(admission)SHS requirements",
+    "tag":"SHS requirements",
     "patterns":[
         "what documents do I need for Senior High School admission?",
         "could you please list the requirements for enrolling in Senior High School?",
@@ -162,7 +162,7 @@
     },
 
     {
-    "tag":"(admission)SHS fee",
+    "tag":"SHS fee",
     "patterns":[
         "what are the estimated fees for senior high school",
         "provide information about fees for senior high school",
@@ -176,7 +176,7 @@
     },
     
     {
-    "tag":"(admission)online payment",
+    "tag":"online payment",
     "patterns":[
         "how can I pay my fees online",
         "do you accept  online payment",
@@ -189,7 +189,7 @@
     },
     
     {
-    "tag":"(admission)slot reservation",
+    "tag":"slot reservation",
     "patterns":[
         "how can I reserve for slot enrollment",
         "reseving a slot for new students",
@@ -201,7 +201,7 @@
     },
  
     {
-    "tag":"(admission)online payment processed",
+    "tag":"online payment processed",
     "patterns":[
         "how long does it take for online payments to be processed?",
         "what happens after I make an online payment",
@@ -213,7 +213,7 @@
     },
  
     {
-    "tag":"(admission)scholarship",
+    "tag":"scholarship",
     "patterns":[
         "how can I apply for scholarship",
         "what are the requirements for president's honor list scholarship",
@@ -225,7 +225,7 @@
     },
  
     {
-    "tag":"(admission)enrollment date",
+    "tag":"enrollment date",
     "patterns":[
         "when is the enrollmentnt for the upcoming school year",
         "dates for enrollment for the next academic year",
@@ -238,7 +238,7 @@
     },
  
     {
-    "tag":"(admission)job application",
+    "tag":"job application",
     "patterns":[
         "job openings at school",
         "do you have any job openings at your institution",

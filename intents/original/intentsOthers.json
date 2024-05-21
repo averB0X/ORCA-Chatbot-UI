@@ -1,6 +1,6 @@
 {"intents": [
     {
-        "tag": "(others)report student for misconduct",
+        "tag": "report student for misconduct",
         "patterns": [
             "I need to report a student for misconduct.",
             "I want to report a bullying.",
@@ -17,7 +17,7 @@
     },
 
     {
-        "tag": "(others)help and guidance",
+        "tag": "help and guidance",
         "patterns": [
             "I need help with my emotions.",
             "I need help with my studies.",
