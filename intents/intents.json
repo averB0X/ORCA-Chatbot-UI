@@ -41,35 +41,22 @@
     },
 
     {
-    "tag": "programs",
-    "patterns": [
-        "programs",
-        "what programs do you offer?",
-        "courses", "what courses do you offer?",
-        "what programs does STI have?",
-        "do you have BSIT", "do you have BSCS?",
-        "do you offer computer science",
-        "information technology",
-        "BSTM",
-        "hospitality and management"
-    ],
-    "responses": [
-        "Thank you for your interest in our school. We are offering the following programs:  - BS in Information Technology (BSIT), - BS in Computer Science (BSCS), - BS in Computer Engineering (BSCPE)"
-    ]
-    },
-
-    {
     "tag":"programs",
     "patterns":[
         "program",
         "what programs do you offer?",
         "courses",
-        "what courses do you offer?", "what programs does STI have?",
+        "what courses do you offer?",
+        "what programs does STI have?",
         "do you have BSIT?",
+        "what courses does STI have?",
         "do you offer information technology?",
         "do you have BSCS?",
         "do you offer computer science?",
-        "do you have a program for hospitality and management?"],
+        "do you have a program for hospitality and management?",
+        "information technology",
+        "BSTM"
+    ],
     "responses":[
         "Thank you for your interest in our school. We are offering the following programs: - BS in Information Technology (BSIT); BS in Computer Science (BSCS); BS in Computer Engineering (BSCPE); BS in Hospitality Management (BSHM); BS in Tourism Management (BSTM); Bachelor of Multimedia Arts (BMMA); Bachelor of Arts in Communication (BACOMM); BS in Accountancy (BSA); BS in Criminology (BSCrim); and BA Psychology (BA Psych)."
     ]

@@ -1,0 +1,85 @@
+{"intents": [
+    {
+        "tag": "cant access eLMS account",
+        "patterns": [
+            "I can't access my eLMS account.",
+            "I can't login to my eLMS account.",
+            "My eLMS account won't login.",
+            "I can't sign in my eLMS account.",
+            "I'm having problems with my eLMS account.",
+            "My eLMS account is broken.",
+            "I forgot my eLMS account credentials.",
+            "I forgot my eLMS account password.",
+            "I forgot my eLMS account email or e-mail.",
+            "I forgot my login information.",
+            "I can't remember my login information.",
+            "I can't remember my eLMS account password.",
+            "I can't remember my eLMS email."
+        ],
+        "responses": "Good day STIer! You may go to our IT Department located at the admission building to inquire about your eLMS login information or credentials. If you have only forgotten your password, you may opt to reset it by going to 'https://login.live.com/login.srf' and clicking 'Forgot password? If you need additional help, you may visit our IT Department office."
+    },
+
+    {
+        "tag": "cant tap ID card",
+        "patterns": [
+            "My ID won't work at the gate.",
+            "My RFID is broken.",
+            "My ID won't tap at the gate.",
+            "My ID errors at the gate.",
+            "I can't get inside the school due to a broken ID card",
+            "My ID card has a problem.",
+            "I can't make my ID work at the school gate.",
+            "My ID doesn't work.",
+            "My ID RFID doesn't seem to work."
+        ],
+        "responses": "Good day STIer! You may go to our IT Department located at the admission building to inquire about technical problems regarding your Identification Card. Replacements are subject to fees and you are required to surrender your current ID card upon receiving your new one."
+    },
+
+    {
+        "tag": "lost ID card",
+        "patterns": [
+            "I lost my ID.",
+            "My ID card is lost.",
+            "I can't find my ID.",
+            "I forgot where I put my ID card.",
+            "Can I get my ID replaced if I lost it?",
+            "Can I get a replacement for my ID if I lost it?",
+            "I lost my ID, how do I request for a new one?",
+            "Can I have a new ID card, I lost it."
+        ],
+        "responses": "Good day STIer! If you lost your Identification card, you must inform us immediately by going to the admission building. An affidavit of loss is required for a replacement. A fee is also required upon the request. You may also ask for temporary gate pass while your ID is being processed."
+    },
+
+    {
+        "tag": "cant access MS Teams account",
+        "patterns": [            
+            "I can't access my Microsoft Teams account.",
+            "I can't login to my Microsoft Teams account.",
+            "My Microsoft Teams account won't login.",
+            "I can't sign in my Microsoft Teams account.",
+            "I'm having problems with my Microsoft Teams account.",
+            "My Microsoft Teams account is broken.",
+            "I forgot my Microsoft Teams account credentials.",
+            "I forgot my Microsoft Teams account password.",
+            "I forgot my Microsoft Teams account email or e-mail.",
+            "I forgot my login information.",
+            "I can't remember my login information.",
+            "I can't remember my Microsoft Teams account password.",
+            "I can't remember my Microsoft Teams email.",
+            "I can't access my MS Teams account.",
+            "I can't login to my MS Teams account.",
+            "My MS Teams account won't login.",
+            "I can't sign in my MS Teams account.",
+            "I'm having problems with my MS Teams account.",
+            "My MS Teams account is broken.",
+            "I forgot my MS Teams account credentials.",
+            "I forgot my MS Teams account password.",
+            "I forgot my MS Teams account email or e-mail.",
+            "I forgot my login information.",
+            "I can't remember my login information.",
+            "I can't remember my MS Teams account password.",
+            "I can't remember my MS Teams email."
+        ],
+        "responses": "Good day STIer! You may go to our IT Department located at the admission building to inquire about your Microsoft login information or credentials. If you have only forgotten your password, you may opt to reset it by going to 'https://login.live.com/login.srf' and clicking 'Forgot password? If you need additional help, you may visit our IT Department office."
+    }
+]}

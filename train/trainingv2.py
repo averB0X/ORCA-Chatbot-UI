@@ -13,11 +13,17 @@ from nltk.stem import WordNetLemmatizer
 # import tensorflow as tf
 
 
-# intents dictionary
-# intents = json.loads(open('./intents/intents.json').read())
-dictionary = open('./intents/intents.json').read()
-intents = json.loads(dictionary)
-
+def nameThisFunction():
+    # iterates over the dictionary
+    for intent in intents['intents']:
+        for pattern in intent['patterns']:
+            tokens = nltk.word_tokenize(pattern)
+            words.extend(tokens)
+            documents.append((tokens, intent['tag']))
+            if intent['tag'] not in classes:
+                classes.append(intent['tag'])
+                
+                
 # ignored characters
 # words -> list of tokenized words
 # tags -> tags defined from dictionary
@@ -27,15 +33,19 @@ words = []  # list for each tokenized words (words are separated from each other
 classes = []  # class or label (tags)
 documents = []  # list for the combinations, where each tokenized words belong in relation to tags
 
+# intents dictionary
+# intents = json.loads(open('./intents/intents.json').read())
+dictionary = open('./intents/intents.json').read()
+intents = json.loads(dictionary)
+nameThisFunction()
 
-# iterates over the dictionary
-for intent in intents['intents']:
-    for pattern in intent['patterns']:
-        tokens = nltk.word_tokenize(pattern)
-        words.extend(tokens)
-        documents.append((tokens, intent['tag']))
-        if intent['tag'] not in classes:
-            classes.append(intent['tag'])
+dictionary = open('./intents/intentsTechnical.json').read()
+intents = json.loads(dictionary)
+nameThisFunction()
+
+dictionary = open('./intents/intentsOthers.json').read()
+intents = json.loads(dictionary)
+nameThisFunction()
 
 lem = WordNetLemmatizer()
 words = [lem.lemmatize(word) for word in words if word not in exclude]  # if word is not in exclude, lemmatize word
@@ -45,6 +55,7 @@ classes = sorted(set(classes))  # removes duplicate tags
 # serializes each element | wb -> writing binary | outputs a pickle file (.pkl)
 pickle.dump(words, open('./pkl/words.pkl', 'wb'))
 pickle.dump(classes, open('./pkl/classes.pkl', 'wb'))
+print("Pickle files exported.")
 
 # MACHINE LEARNING
 training = []
@@ -85,9 +96,6 @@ model = Sequential([
     Dropout(0.5),
     
     Dense(64, activation='relu'),
-    Dropout(0.5),
-    
-    Dense(32, activation='relu'),
     Dropout(0.5),
     
     # output layer

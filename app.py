@@ -19,7 +19,6 @@ def predict():
     ints = predictClass(msg)
     res = getResponse(ints, intents)
     message = {"answer": res}
-    print(message)
     return jsonify(message)
         
 if __name__ == "__main__":

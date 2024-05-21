@@ -1,0 +1,31 @@
+{"intents": [
+    {
+        "tag": "report student for misconduct",
+        "patterns": [
+            "I need to report a student for misconduct.",
+            "I want to report a bullying.",
+            "I saw someone cheat in an exam.",
+            "I saw a classmate use forbidden materials during an exam.",
+            "I saw my classmate use a cheat sheet during exam.",
+            "I want to report a cheating incident during exams.",
+            "Exam cheating",
+            "Bullying another student.",
+            "Vandalising on school grounds.",
+            "Possession of illegal substance."
+        ],
+        "responses": "To report a student for any violation of our school rules and regulations, you may visit our Disciplinary Office located at the Admission builing."
+    },
+
+    {
+        "tag": "help and guidance",
+        "patterns": [
+            "I need help with my emotions.",
+            "I need help with my studies.",
+            "I need emotional support.",
+            "I want some counselling about my studies.",
+            "I need some counselling.",
+            "I need some guidance."
+        ],
+        "responses": "For guidance and counselling concerns, you may visit our office located at the third floor of the school builing beside the consultation area. Please don't hesitate to ask for help when you need it. :>"
+    }
+]}

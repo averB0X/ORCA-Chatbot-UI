@@ -12,8 +12,16 @@ from keras.models import load_model
 # loads intents dictionary
 # loads pickle files of words and classes in reading binary mode (rb)
 # loads trained model
-# dictionary = open('intents/intents.json').read()
-# intents = json.loads(dictionary)
+
+
+dictMaster = {}
+dictOne = json.loads(open('./intents/intents.json').read())
+dictTwo = json.loads(open('./intents/intentsTechnical.json').read())
+dictMaster.update(dictOne)
+dictMaster.update(dictTwo)
+print(dictMaster)
+
+
 words = pickle.load(open('pkl/words.pkl', 'rb'))
 classes = pickle.load(open('pkl/classes.pkl', 'rb'))
 model = load_model('model/chatbotModel.h5')
@@ -25,7 +33,8 @@ lem = WordNetLemmatizer()
 
 def cleanUpSentence(sentence):
     tokens = nltk.word_tokenize(sentence)  # tokenize sentence
-    tokens = [lem.lemmatize(word) for word in tokens]  # lemmatize sentence
+    tokens = [lem.lemmatize(word.lower()) for word in tokens]  # lemmatize sentence
+    print(tokens)
     return tokens
 
 # converts sentence to a list of 0s and 1s
@@ -43,7 +52,6 @@ def bagOfWords(sentence):
 # predicts the class (tag) where a sentence falls under
 def predictClass(sentence):
     bow = bagOfWords(sentence)
-    print(sentence)
     res = model.predict(np.array([bow]))[0]  # passes the numpy array of the bag of words
     ERRORTHRESHOLD = 0.25
     results = [[i, r] for i, r in enumerate(res) if r > ERRORTHRESHOLD]  # uses the softmax activation function which returns the probability that a certain input belongs to a specific class | if the probability is 25% or lower then disregard
@@ -52,26 +60,26 @@ def predictClass(sentence):
     returnList = []
     for r in results:
         returnList.append({'intent': classes[r[0]], 'probability': str(r[1])})
+        print(returnList)
     return returnList  # returns a list of intents and its probabilities
 
 def getResponse(intentsList, intents_json):
     tag = intentsList[0]['intent']
+    print(tag)
     listOfIntents = intents_json['intents']
     for i in listOfIntents:
         if i['tag'] == tag:
             result = random.choice(i['responses'])
     return result
 
+#chatbot loop
+print("Test running...")
 
-
-# chatbot loop
-# print("Test running...")
-
-# while True:
-#     msg = input("User: ")
-#     if msg == "debugquit":
-#         exit()
-#     else:
-#         ints = predictClass(msg)
-#         res = getResponse(ints, intents)
-#         print("ORCA: " + res)
+while True:
+    msg = input("User: ")
+    if msg == "debugquit":
+        exit()
+    else:
+        ints = predictClass(msg)
+        res = getResponse(ints, intents)
+        print("ORCA: " + res)
