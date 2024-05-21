@@ -1,13 +1,10 @@
 import json
 
 from flask import Flask, render_template, request, jsonify
-from chatbotv1 import predictClass
-from chatbotv1 import getResponse
+from chatbotv2 import predictClass
+from chatbotv2 import getResponse
 
 app = Flask(__name__)
-
-dictionary = open("intents/intents.json").read()
-intents = json.loads(dictionary)
 
 @app.route("/")
 def index_get():
@@ -17,7 +14,7 @@ def index_get():
 def predict():
     msg = request.get_json().get("message")
     ints = predictClass(msg)
-    res = getResponse(ints, intents)
+    res = getResponse(ints)
     message = {"answer": res}
     return jsonify(message)
         

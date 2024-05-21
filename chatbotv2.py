@@ -82,14 +82,14 @@ def getResponse(intentsList):
                 result = random.choice(i['responses'])
         return result
 
-#chatbot loop
-print("Test running...")
+# #chatbot loop
+# print("Test running...")
 
-while True:
-    msg = input("User: ")
-    if msg == "debugquit":
-        exit()
-    else:
-        ints = predictClass(msg)
-        res = getResponse(ints)
-        print("ORCA: " + res)
+# while True:
+#     msg = input("User: ")
+#     if msg == "debugquit":
+#         exit()
+#     else:
+#         ints = predictClass(msg)
+#         res = getResponse(ints)
+#         print("ORCA: " + res)
