@@ -16,7 +16,7 @@
         "I can't remember my eLMS account password.",
         "I can't remember my eLMS email."
     ],
-    "responses": "Good day STIer! You may go to our IT Department located at the admission building to inquire about your eLMS login information or credentials. If you have only forgotten your password, you may opt to reset it by going to 'https://login.live.com/login.srf' and clicking 'Forgot password? If you need additional help, you may visit our IT Department office."
+    "responses": ["Good day STIer! You may go to our IT Department located at the admission building to inquire about your eLMS login information or credentials. If you have only forgotten your password, you may opt to reset it by going to 'https://login.live.com/login.srf' and clicking 'Forgot password? If you need additional help, you may visit our IT Department office."]
     },
 
     {
@@ -32,7 +32,7 @@
         "My ID doesn't work.",
         "My ID RFID doesn't seem to work."
     ],
-    "responses": "Good day STIer! You may go to our IT Department located at the admission building to inquire about technical problems regarding your Identification Card. Replacements are subject to fees and you are required to surrender your current ID card upon receiving your new one."
+    "responses": ["Good day STIer! You may go to our IT Department located at the admission building to inquire about technical problems regarding your Identification Card. Replacements are subject to fees and you are required to surrender your current ID card upon receiving your new one."]
     },
 
     {
@@ -47,7 +47,7 @@
         "I lost my ID, how do I request for a new one?",
         "Can I have a new ID card, I lost it."
     ],
-    "responses": "Good day STIer! If you lost your Identification card, you must inform us immediately by going to the admission building. An affidavit of loss is required for a replacement. A fee is also required upon the request. You may also ask for temporary gate pass while your ID is being processed."
+    "responses": ["Good day STIer! If you lost your Identification card, you must inform us immediately by going to the admission building. An affidavit of loss is required for a replacement. A fee is also required upon the request. You may also ask for temporary gate pass while your ID is being processed."]
     },
 
     {
@@ -80,6 +80,6 @@
         "I can't remember my MS Teams account password.",
         "I can't remember my MS Teams email."
     ],
-    "responses": "Good day STIer! You may go to our IT Department located at the admission building to inquire about your Microsoft login information or credentials. If you have only forgotten your password, you may opt to reset it by going to 'https://login.live.com/login.srf' and clicking 'Forgot password? If you need additional help, you may visit our IT Department office."
+    "responses": ["Good day STIer! You may go to our IT Department located at the admission building to inquire about your Microsoft login information or credentials. If you have only forgotten your password, you may opt to reset it by going to 'https://login.live.com/login.srf' and clicking 'Forgot password? If you need additional help, you may visit our IT Department office."]
     }
 ]}

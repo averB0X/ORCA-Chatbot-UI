@@ -17,22 +17,6 @@ from keras.models import load_model
 # intents = json.loads(open('./intents/intents.json').read())
 
 
-# dictMaster = []
-# dictOne = json.loads(open('./intents/intents.json').read())
-# dictTwo = json.loads(open('./intents/intentsTechnical.json').read())
-# dictMaster.append(dictOne)
-# dictMaster.append(dictTwo)
-# print(type(dictMaster))
-# print(dictMaster)
-
-# dictOne = json.loads(open('./intents/intents.json').read())
-# print(dictOne)
-# dictTwo = json.loads(open('./intents/intentsTechnical.json').read())
-# print(dictTwo)
-# dictMaster = {**dictOne, **dictTwo}
-# print(type(dictMaster))
-# print(dictMaster)
-
 words = pickle.load(open('pkl/words.pkl', 'rb'))
 classes = pickle.load(open('pkl/classes.pkl', 'rb'))
 model = load_model('model/chatbotModel.h5')
@@ -40,7 +24,6 @@ lem = WordNetLemmatizer()
 
 
 # <=========== functions ===========>
-
 
 def cleanUpSentence(sentence):
     tokens = nltk.word_tokenize(sentence)  # tokenize sentence

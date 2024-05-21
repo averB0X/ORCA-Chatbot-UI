@@ -13,7 +13,7 @@
             "Vandalising on school grounds.",
             "Possession of illegal substance."
         ],
-        "responses": "To report a student for any violation of our school rules and regulations, you may visit our Disciplinary Office located at the Admission builing."
+        "responses": ["To report a student for any violation of our school rules and regulations, you may visit our Disciplinary Office located at the Admission builing."]
     },
 
     {
@@ -26,6 +26,6 @@
             "I need some counselling.",
             "I need some guidance."
         ],
-        "responses": "For guidance and counselling concerns, you may visit our office located at the third floor of the school builing beside the consultation area. Please don't hesitate to ask for help when you need it. :>"
+        "responses": ["For guidance and counselling concerns, you may visit our office located at the third floor of the school builing beside the consultation area. Please don't hesitate to ask for help when you need it. :>"]
     }
 ]}
